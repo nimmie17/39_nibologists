@@ -1,0 +1,165 @@
+<html>
+    <head>
+
+            <title> somethin </title>
+            <link rel="stylesheet" href="bla.css">
+            <script src="blu.js"> </script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+          <!-- Popper JS -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+          <!-- Latest compiled JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <style>
+            .content {
+              max-width: 500px;
+              margin: auto;
+              padding: 20px;
+            }
+            </style>
+    </head>
+    <body>
+        <button class="tablink" onclick="openPage('Home', this, 'black')">ADOPT</button>
+    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">SPONSOR</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue')">DONATE</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">HANG OUT FOR A DAY</button>
+    
+    <div id="Home" class="tabcontent">
+      
+      
+        
+        <div class="content">
+          
+          <form action="#" id="f1" method="post" enctype="multipart/form-data">
+            <h2>Basic Information</h2><br>
+        <div>
+            <label for="name">FIRST NAME: </label>
+            <input type="text" name="fname" id="name" placeholder="Firstname" required>
+        </div>
+        <div>
+            <label for="name"> LAST NAME: </label>
+            <input type="text" name="lname" id="name" placeholder="Lastname" required>
+        </div>
+       <!-- <div>
+            <label for="email"> EMAIL: </label>
+             <input type="email" name="email" id="email" placeholder="e-mail" required>
+        </div> -->
+        <div>
+            <label for="phone">PHONE:</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="age"> AGE: </label>
+            <input type="number" name="age" id="age" placeholder="Age" min="1" max="200" step="2">
+        </div>
+        <div>
+            <label for="date"> BDATE: </label>
+            <input type="date" name="bdate" id="date" placeholder="e-mail" min="2019-08-30">
+        </div>
+        <div>
+             <label for="aadhar"> AADHAR </label>
+            <input type="number" name="aadhar" id="aad" placeholder="Aadhar Number">
+        </div>
+        <div>
+            <label for="aadhar"> PAN CARD </label>
+            <input type="text" name="pan" id="pan" placeholder=" Pan Card">
+            </div>
+        <div>
+            <h2>Parental Information</h2>
+            <div class = "radio1"></div>
+            Maritial Status?
+            <div>
+                <label for="married">Married</label>
+                <input type="radio" name ="abc" id="married">
+            </div>
+            <div>
+                <label for="unmarried">Unmarried</label>
+                <input type="radio" name ="abc" id="unmarried">
+            </div>
+            <div>
+                <label for="divorced">Divorced</label>
+                <input type="radio" name ="abc" id="divorced">
+            </div>
+            </div>
+            <div class="radio2">
+            Are you a Single Parent?
+            <div>
+                <label for="yes">Yes</label>
+                <input type="radio" name ="def" id="yes">
+            </div>
+            <div>
+                <label for="no">No</label>
+                <input type="radio" name ="def" id="no">
+            </div>
+            </div>
+            GENDER:
+            <div>
+                <label for="male">MALE</label>
+                <input type="radio" name="gender" id="gender">
+            </div>
+            <div>
+                <label for="female">FEMALE</label>
+                <input type="radio" name="gender" id="gender">
+            </div>
+            <div>
+                <label for="others">OTHERS</label>
+                <input type="radio" name="gender" id="gender">
+            </div>
+      
+        <button type="submit" class="btn btn-success btn-block"> SUBMIT </button>
+        </form>
+
+        </div>
+        
+
+
+    </div>
+    
+    <div id="News" class="tabcontent">
+
+      <p style="text-align: center; font-size: 50px;">
+        <b>
+          How would you like to Sponsor?
+        </b>
+      </p>
+      
+      
+      <a href="#"></a><button type="button" class="btn btn-success btn-lg btn-block"> Education </button></a> <br> <br> 
+      <a href="#"></a><button type="button" class="btn btn-danger btn-lg btn-block"> Health Insurance</button></a> <br> <br> </a>
+      <a href="#"> <button type="button" class="btn btn-warning btn-lg btn-block"> Sponsor a Meal  </button> <br> <br> </a>
+
+    </div>
+    
+    <div id="Contact" class="tabcontent">
+     
+      <p style="text-align: center; font-size: 50px;">
+        <b>
+          What would you like to Donate?
+        </b>
+      </p>
+      
+      
+      <a href="#"> <button type="button" class="btn btn-warning btn-lg btn-block"> Orphanage Welfare </button> <br> <br> </a>
+      <a href="#"></a><button type="button" class="btn btn-danger btn-lg btn-block">Electronic Devices</button> <br> <br> </a>
+      <a href="#"></a><button type="button" class="btn btn-success btn-lg btn-block">Food and Clothings</button> <br> <br> </a>
+      <a href="#"></a><button type="button" class="btn btn-info btn-lg btn-block">Others</button><br> </a>
+      
+
+
+    </div>
+    
+    <div id="About" class="tabcontent">
+      
+      
+
+      
+    </div>
+    </body>
+</html>
+
+
+
