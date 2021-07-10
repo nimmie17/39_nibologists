@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		header{
+			text-align: center;
+			background-color:white; 
+			color: #330000;
+			padding: 5px;
+			border-top: 2px solid black;
+			border-left: 2px solid black;
+			border-right: 2px solid black;
+		}
+		#img1{
+			width: 150px;
+			height: 150px;
+		}
+		nav{
+			height: 80px;
+			background-color:red;
+			text-align: center;
+			border-top: 2px solid black;
+			border-right: 2px solid black;
+			border-left: 2px solid black;
+		}
+		section{
+			float: left;
+			background-color: #AFEEEE; 
+			width: 32.7%;
+			height: 400px; 
+			border-top: 2px solid black;
+			border-left: 2px solid black;
+			border-right: 2px solid black;
+			background-image: url("c4.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		article{
+			text-align:left;
+			float: right;
+			width: 32.9%;
+			border-right: 2px solid black;
+			border-left: 2px solid black;
+			height: 400px;
+			background-color:lightgreen; 
+			border-top: 2px solid black;
+		}
+		footer{
+			clear: both;
+			background-color:white;
+			text-align: center;
+			padding: 5px;
+			border: 2px solid black;
+			border-left: 2px solid black;
+			border-right: 2px solid black;
+		}
+		#u1{
+			list-style: none;
+		}
+		#u1 li a{
+			width: 300px;
+			height: 30px;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 10px;
+			text-align: center;
+			text-decoration: none;
+			border: 1px solid;
+			margin-left: 35px;
+			color: white;
+			margin-top: 0px;
+			margin-bottom: 15px;
+			background-color:black;
+			float: left;
+			display: block;
+		}
+		#u2 li{
+			width: 200px;
+		}
+		#u2 li a{
+			width: 200px;
+			text-align: center;
+			text-decoration: none;
+			border: 1px solid;
+			color: white;
+			background-color:blue;
+			float: left;
+			display: block;
+		}
+		#u2 li a:hover{
+				color: orange;
+				text-decoration: none;
+		}
+		#u2 li:hover #u3{
+			display: block;
+		}
+		#u2 li{
+			list-style: none;
+			text-decoration-style: none;
+		}
+		#u2 li #u3 li a{
+			background-color: black;
+			color: orange;
+		}
+		#u2 li #u3{
+			display: none;
+		}
+		#u3 li a{
+			text-decoration: none;
+			text-align: center;
+			border: 1px solid;
+			background-color: rgb(245,99,0);
+			color: white;
+			width: 200px;
+			float: left;
+		}
+		#h2{
+			text-align: center;
+		}
+		#abc {
+			float: left;
+			background-color: #e4eeaf; 
+			width: 33.32%;
+			height: 400px; 
+			border-top: 2px solid black;
+			border-left: 2px solid black;
+			border-right: 3px solid black;
+			background-image: url("c4.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img id="img1" src="1.jpg">
+	</header>
+	<nav>
+		<ul id="u1">
+			<li><a href="#">ADOPT</li></a>
+			<li><a href="#">SPONSOR</li></a>
+			<li><a href="#">DONATE</li></a>
+		
+		</ul>
+	</nav>
+	<section>
+			<h1>Special Menu</h1>
+			<ul id="u2">
+			<li><a href="#">How can you help?</a>
+				<ul id="u3">
+				<li><a href="#">Donate Resources</a></li>
+				<li><a href="#">Sponsor a meal</a></li>
+				<!-- <li><a href="#"></a></li> --> 
+				</ul></li>
+			<br> <br> <!-- <li><a href="#"> </a> 
+				<ul id="u3">
+				<li><a href="#">Tea</a></li>
+				<li><a href="#">Special Tea</a></li>
+				<li><a href="#">Green Tea</a></li>
+				</ul></li> --> 
+			<br> <br><li><a href="#">Get Involved</a>
+				<ul id="u3">
+				<li><a href="#">Help find Abandoned kids</a></li>
+				<li><a href="#">Conduct Awareness Drives</a></li>
+				<li><a href="#">French Fries</a></li>
+				</ul></li>
+			<br> <br><li><a href="#">Drinks</a> 
+				<ul id="u3">
+				<li><a href="#">Beer</a></li>
+				<li><a href="#">Wishkey</a></li>
+				<li><a href="#">Breezer</a></li>
+				</ul></li>
+			</ul>
+			<br><br><br><br><br><br><br><address><font color="white">27 Q Road,<br>Anand<br>388210<br>9000908702</font></address>
+	</section>
+	<div id="abc">
+
+	</div>
+	<article>
+		<h1 id="h2"> Place Your Order </h1>
+	<form>
+		<label >Item Name:</label>
+		 <select id="ip" onchange="bill()">
+			<option value="30"> Hot Coffee </option>
+			<option value="50"> Cold Coffee </option>
+			<option value="20"> Tea </option>
+			<option value="30"> Black Tea </option>
+			<option value="40"> Green Tea </option>
+			<option value="50"> Burger </option>
+			<option value="100"> Pizza </option>
+			<option value="60"> French Fries </option>
+			<option value="200"> Beer </option>
+			<option value="400"> Wishkey </option>
+			<option value="300">Breeezers</option>
+		</select>
+		
+		<label><br>Price:</label>
+				<input type="singleline" id="i1" name="Price" disabled><br>
+		<label>Quantity:</label>
+				<input type="number" id="i2" name="Quantity"><br>
+				<input type="button" id="b1" value="Order" name="cal" onclick="Bill1()">
+		<label>Total Bill is:</label>
+				     <input type="text" id="res" name="res" disabled><br>
+	</form>
+	<script type="text/javascript">
+		function bill()
+		{
+			var p = document.getElementById('ip').value;
+			document.getElementById('i1').value = p;
+		}
+		function Bill1()
+		{
+			var p=parseInt(document.getElementById('ip').value);
+			var q=document.getElementById('i2').value;
+			var res;
+			res=p*q;
+			document.getElementById('res').value=res;
+		}
+	</script>
+	</article>
+	<footer>
+		<p><marquee><b><i>ID:18BSIT027, 18BSIT031 <br>
+					NAME:Bhavin Khatri, Selince Mahida</i></b>
+		</marquee>
+
+		</p>
+	</footer>
+</body>
+</html>
