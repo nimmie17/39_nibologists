@@ -1,8 +1,18 @@
+<?php
+
+session_start();
+if(!$_SESSION['happycradles']){
+  header('Location: login1.php');
+}
+
+?>
+
+
 <html>
     <head>
 
-            <title> somethin </title>
-            <link rel="stylesheet" href="bla.css">
+            <title> Welcome </title>
+            <link rel="stylesheet" type="text/css" href="bla.css">
             <script src="blu.js"> </script>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -35,7 +45,7 @@
         
         <div class="content">
           
-      <form action="adopt.php" id="f1" method="post" enctype="multipart/form-data">
+      <form action="xxx2.html" id="f1" method="post" enctype="multipart/form-data">
             <h2>Basic Information</h2><br>
         <div>
             <label for="name">FIRST NAME: </label>
@@ -59,36 +69,36 @@
         </div>
         <div>
             <label for="date"> DOB: </label>
-            <input type="date" name="dob" id="date" placeholder="e-mail" min="2019-08-30">
+            <input type="date" name="bdate" id="date" placeholder="e-mail" min="2019-08-30">
         </div>
         <div>
              <label for="aadhar"> AADHAR </label>
             <input type="number" name="aadhar" id="aad" placeholder="Aadhar Number">
           </div>
           <div>
-            <label for="pan"> PAN CARD </label>
-            <input type="pan" name="pan" id="pan" placeholder=" Pan Card">
+            <label for="aadhar"> PAN CARD </label>
+            <input type="text" name="pan" id="pan" placeholder=" Pan Card">
           </div>
           <div>
             <h2>Parental Information</h2>
             GENDER:
             <div>
                 <label for="male">MALE</label>
-                <input type="radio" name="gender" id="gender" value="m">
+                <input type="radio" name="gender" id="gender">
                 <label for="female">FEMALE</label>
-                <input type="radio" name="gender" id="gender" value="f">
+                <input type="radio" name="gender" id="gender">
                 <label for="others">OTHERS</label>
-                <input type="radio" name="gender" id="gender" value="o">
+                <input type="radio" name="gender" id="gender">
             </div>
             <div class = "radio1"></div>
             Maritial Status?
             <div>
                 <label for="married">Married</label>
-                <input type="radio" name ="abc" id="married" value="mar">
+                <input type="radio" name ="abc" id="married">
                 <label for="unmarried">Unmarried</label>
-                <input type="radio" name ="abc" id="unmarried" value="unmar">
+                <input type="radio" name ="abc" id="unmarried">
                 <label for="divorced">Divorced</label>
-                <input type="radio" name ="abc" id="divorced" value="divo">
+                <input type="radio" name ="abc" id="divorced">
             </div>
 
             </div>
@@ -96,9 +106,18 @@
            If Married, atleast two years of stable maritial relationship?
             <div>
                 <label for="yes">Yes</label>
-                <input type="radio" name ="def" id="yes" value="y">
+                <input type="radio" name ="def" id="yes">
                 <label for="no">No</label>
-                <input type="radio" name ="def" id="no" value="n">
+                <input type="radio" name ="def" id="no">
+            </div>
+
+            <div class="radio2">
+           Citizenship: NRI?
+            <div>
+                <label for="yes">Yes</label>
+                <input type="radio" name ="def" id="yes">
+                <label for="no">No</label>
+                <input type="radio" name ="def" id="no">
             </div>
             
             </div>
@@ -108,13 +127,13 @@
               If couples, How many children do you have?
                <div>
                    <label for="yes">0</label>
-                   <input type="radio" name ="def" id="yes" value="zero">
+                   <input type="radio" name ="def" id="yes">
                    <label for="no">1</label>
-                   <input type="radio" name ="def" id="no" value="one">
+                   <input type="radio" name ="def" id="no">
                    <label for="yes">2</label>
-                   <input type="radio" name ="def" id="yes" value="two">
+                   <input type="radio" name ="def" id="yes">
                    <label for="no">3 or more</label>
-                   <input type="radio" name ="def" id="no" value="three">
+                   <input type="radio" name ="def" id="no">
                </div>
                
                </div>
@@ -124,9 +143,9 @@
              If Unmarried / Divorced, Gender of intrest in adoption(Only for Single Female)
                <div>
                    <label for="yes">Boy</label>
-                   <input type="radio" name ="def" id="yes" value="b">
+                   <input type="radio" name ="def" id="yes">
                    <label for="no">Girl</label>
-                   <input type="radio" name ="def" id="no" value="g">
+                   <input type="radio" name ="def" id="no">
                </div>
 
                
@@ -139,13 +158,13 @@
                 <p id="rule">Note: The minimum age difference between the child and either of the prospective adoptive parents shall not be less than twenty-five years.</p>
                   <div>
                       <label for="yes">Below 1 year</label>
-                      <input type="radio" name ="def" id="yes" value="lone">
+                      <input type="radio" name ="def" id="yes">
                       <label for="no">1-3 years</label>
-                      <input type="radio" name ="def" id="no" value="b13">
+                      <input type="radio" name ="def" id="no">
                       <label for="yes">3-5 years</label>
-                      <input type="radio" name ="def" id="yes" value="b35">
+                      <input type="radio" name ="def" id="yes">
                       <label for="no">Above 5 years</label>
-                      <input type="radio" name ="def" id="no" value="a5">
+                      <input type="radio" name ="def" id="no">
                   </div>
    
                   
@@ -158,23 +177,23 @@
                   </p>
                   <div>
                     <label for="yes">Yes</label>
-                    <input type="radio" name ="def" id="yes" value="y">
+                    <input type="radio" name ="def" id="yes">
                     <label for="no">No</label>
-                    <input type="radio" name ="def" id="no" value="n">
+                    <input type="radio" name ="def" id="no">
                     <p>If Yes, Specify</p> 
-                    <textarea name="ta1">  </textarea><br>
+                    <textarea>  </textarea><br>
                 </div>
                   <p>
                     Do you have any past criminal records.
                   </p>
                   <div>
                     <label for="yes">Yes</label>
-                    <input type="radio" name ="def" id="yes" value="y">
+                    <input type="radio" name ="def" id="yes">
                     
                     <label for="no">No</label>
-                    <input type="radio" name ="def" id="no" value="n">
+                    <input type="radio" name ="def" id="no">
                     <p>If Yes, Specify</p> 
-                    <textarea name="ta2">  </textarea><br>
+                    <textarea>  </textarea><br>
                 </div>
 
 
@@ -213,10 +232,10 @@
       </p>
       
       
-      <a href="xxx3.php"> <button type="button" class="btn btn-warning btn-lg btn-block"> Orphanage Welfare </button> <br> <br> </a>
-      <a href="xxx3.php"></a><button type="button" class="btn btn-danger btn-lg btn-block">Electronic Devices</button> <br> <br> </a>
-      <a href="xxx3.php"></a><button type="button" class="btn btn-success btn-lg btn-block">Food and Clothings</button> <br> <br> </a>
-      <a href="xxx3.php"></a><button type="button" class="btn btn-info btn-lg btn-block">Others</button><br> </a>
+      <a href="#"> <button type="button" class="btn btn-warning btn-lg btn-block"> Orphanage Welfare </button> <br> <br> </a>
+      <a href="#"></a><button type="button" class="btn btn-danger btn-lg btn-block">Electronic Devices</button> <br> <br> </a>
+      <a href="#"></a><button type="button" class="btn btn-success btn-lg btn-block">Food and Clothings</button> <br> <br> </a>
+      <a href="#"></a><button type="button" class="btn btn-info btn-lg btn-block">Others</button><br> </a>
       
 
 

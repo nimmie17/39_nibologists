@@ -1,0 +1,87 @@
+<Html>
+<head>
+<title>
+Registration Page
+</title>
+<style >
+
+    body{
+      border:2px solid black;
+      padding:5px;
+      font-size:20px;
+      position:relative;
+      margin:0 auto;
+
+    }
+    #btn{
+      height:30px;
+      width:auto;
+      font-size:20px;
+      background-color:#f5f5f5;
+    }
+
+</style>
+</head>
+<body bgcolor=#d3d3d3 >
+<br>
+<br>
+<form>
+<h1>Basic Information</h1>
+<label> Firstname: </label>
+<input type="text" name="firstname" size="15"/ placeholder="Firstname">
+<label> Lastname: </label>
+<input type="text" name="lastname" size="15"/ placeholder="Lastname"><br><br>
+  <label>
+  Gender :
+</label><br>
+<input type="radio" name="male"/> Male
+<input type="radio" name="female"/> Female
+<input type="radio" name="other"/> Other
+<br>
+<br>
+<label for="age"> Age: </label>
+<input type="number" name="age" id="age" placeholder="Age" min="1" max="200" step="2"><br><br>
+<label for="aadhar"> Aadhar: </label>
+<input type="number" name="aadhar" id="aad" placeholder="Aadhar Number"><br><br>
+<label for="aadhar"> Pan Card :</label>
+<input type="text" name="pan" id="pan" placeholder=" Pan Card Number"><br><br>
+
+
+
+<label>
+Phone :
+</label>
+<input type="text" name="country code"  value="+91" size="2"/>
+<input type="text" name="phone" size="10"/> <br> <br>
+Address
+<br>
+<textarea cols="80" rows="5" value="address">
+</textarea>
+<br> <br>
+Email:
+<input type="email" id="email" name="email"/ placeholder='email-id'> <br>
+<br>
+<h2>Background Information</h2>
+<p>
+  Do you have any life threatening medical condition?
+</p>
+<div>
+  <label for="yes">Yes</label>
+  <input type="radio" name="def" id="yes">
+  <label for="no">No</label>
+  <input type="radio" name="def" id="no">
+</div>
+<p>
+  Do you have any past criminal records.
+</p>
+<div>
+  <label for="yes">Yes</label>
+  <input type="radio" name="def" id="yes">
+  <label for="no">No</label>
+  <input type="radio" name="def" id="no"><br><br>
+</div>
+
+<input type="button" value="Submit"/ id="btn">
+</form>
+</body>
+</html>
